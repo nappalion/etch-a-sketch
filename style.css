@@ -1,0 +1,27 @@
+.screen {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.square {
+    border: 1px solid black;
+    user-select: none;
+    flex: 1;
+}
+
+.grid-button {
+    width: auto;
+    height: 20px;
+}
