@@ -5,10 +5,35 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="screen">
-        <button class="grid-button">Generate Grid</button>
-        <div class="container">
 
+    <div class="screen">
+        <div class="container">
+            <div class="controls">
+                <h1>Etch-A-Sketch</h1>
+                <input type="color" id="color" name="color" value="#ff0000"> 
+
+                <label>
+                    <input type="checkbox" id="rainbow" name="rainbow">
+                    Rainbow Color
+                </label>
+
+                <label>
+                    <input type="checkbox" id="eraser" name="eraser">
+                    Eraser
+                </label>
+
+                <div class="grid-size">
+                    <label id="grid-label" for="grid-slider">50 x 50</label>
+                    <input type="range" min="1" max="100" value="50" id="grid-slider">
+                </div>
+
+                <button id="clear-button">Clear</button>
+
+            </div>
+
+            <div class="grid">
+
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
